@@ -1,0 +1,830 @@
+70077MiB / 81920MiB
+
+assert args.num_layers % mpu.get_pipeline_model_parallel_world_size() == 0, \
+
+
+bash examples/pretrain_gpt_distributed_with_mp.sh
+WARNING:torch.distributed.run:
+*****************************************
+Setting OMP_NUM_THREADS environment variable for each process to be 1 in default, to avoid your system being overloaded, please further tune the variable for optimal performance in your application as needed. 
+*****************************************
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [OKAY]
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+ [WARNING]  async_io requires the dev libaio .so object and headers but these were not found.
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [OKAY]
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [NO] ....... [NO]
+cpu_adagrad ............ [NO] ....... [OKAY]
+cpu_adam ............... [NO] ....... [OKAY]
+fused_adam ............. [NO] ....... [OKAY]
+fused_lamb ............. [NO] ....... [OKAY]
+quantizer .............. [NO] ....... [OKAY]
+random_ltd ............. [NO] ....... [OKAY]
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [OKAY]
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [OKAY]
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [OKAY]
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [OKAY]
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+ [WARNING]  async_io requires the dev libaio .so object and headers but these were not found.
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [OKAY]
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+--------------------------------------------------
+DeepSpeed C++/CUDA extension op report
+--------------------------------------------------
+NOTE: Ops not installed will be just-in-time (JIT) compiled at
+      runtime if needed. Op compatibility means that your system
+      meet the required dependencies to JIT install the op.
+--------------------------------------------------
+JIT compiled ops requires ninja
+ninja .................. [OKAY]
+--------------------------------------------------
+op name ................ installed .. compatible
+--------------------------------------------------
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [NO] ....... [NO]
+cpu_adagrad ............ [NO] ....... [OKAY]
+cpu_adam ............... [NO] ....... [OKAY]
+fused_adam ............. [NO] ....... [OKAY]
+fused_lamb ............. [NO] ....... [OKAY]
+quantizer .............. [NO] ....... [OKAY]
+random_ltd ............. [NO] ....... [OKAY]
+ [WARNING]  async_io requires the dev libaio .so object and headers but these were not found.
+ [WARNING]  async_io requires the dev libaio .so object and headers but these were not found.
+ [WARNING]  async_io requires the dev libaio .so object and headers but these were not found.
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [NO] ....... [NO]
+cpu_adagrad ............ [NO] ....... [OKAY]
+cpu_adam ............... [NO] ....... [OKAY]
+fused_adam ............. [NO] ....... [OKAY]
+fused_lamb ............. [NO] ....... [OKAY]
+quantizer .............. [NO] ....... [OKAY]
+random_ltd ............. [NO] ....... [OKAY]
+ [WARNING]  async_io requires the dev libaio .so object and headers but these were not found.
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [NO] ....... [NO]
+cpu_adagrad ............ [NO] ....... [OKAY]
+cpu_adam ............... [NO] ....... [OKAY]
+fused_adam ............. [NO] ....... [OKAY]
+fused_lamb ............. [NO] ....... [OKAY]
+quantizer .............. [NO]  [WARNING]  async_io: please install the libaio-dev package with apt....... [OKAY]
+
+random_ltd ............. [NO] ....... [OKAY]
+ [WARNING]  If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [NO] ....... [NO]
+cpu_adagrad ............ [NO] ....... [OKAY]
+cpu_adam ............... [NO] ....... [OKAY]
+fused_adam ............. [NO] ....... [OKAY]
+fused_lamb ............. [NO] ....... [OKAY]
+quantizer .............. [NO] ....... [OKAY]
+random_ltd ............. [NO] ....... [OKAY]
+ [WARNING]  async_io requires the dev libaio .so object and headers but these were not found.
+ [WARNING]  async_io requires the dev libaio .so object and headers but these were not found.
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [NO] ....... [NO]
+cpu_adagrad ............ [NO] ....... [OKAY]
+cpu_adam ............... [NO] ....... [OKAY]
+fused_adam ............. [NO] ....... [OKAY]
+fused_lamb ............. [NO] ....... [OKAY]
+quantizer .............. [NO] ....... [OKAY]
+random_ltd ............. [NO] ....... [OKAY]
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [NO] ....... [NO]
+cpu_adagrad ............ [NO] ....... [OKAY]
+cpu_adam ............... [NO] ....... [OKAY]
+fused_adam ............. [NO] ....... [OKAY]
+fused_lamb ............. [NO] ....... [OKAY]
+quantizer .............. [NO] ....... [OKAY]
+random_ltd ............. [NO] ....... [OKAY]
+ [WARNING]  async_io: please install the libaio-dev package with apt
+ [WARNING]  If libaio is already installed (perhaps from source), try setting the CFLAGS and LDFLAGS environment variables to where it can be found.
+async_io ............... [NO] ....... [NO]
+cpu_adagrad ............ [NO] ....... [OKAY]
+cpu_adam ............... [NO] ....... [OKAY]
+fused_adam ............. [NO] ....... [OKAY]
+fused_lamb ............. [NO] ....... [OKAY]
+quantizer .............. [NO] ....... [OKAY]
+random_ltd ............. [NO] ....... [OKAY]
+ [WARNING]  using untested triton version (2.0.0), only 1.0.0 is known to be compatible
+sparse_attn ............ [NO] ....... [NO]
+ [WARNING]  using untested triton version (2.0.0), only 1.0.0 is known to be compatible
+sparse_attn ............ [NO] ....... [NO]
+spatial_inference ...... [NO] ....... [OKAY]
+transformer ............ [NO] ....... [OKAY]
+stochastic_transformer . [NO] ....... [OKAY]
+ [WARNING]  using untested triton version (2.0.0), only 1.0.0 is known to be compatible
+sparse_attn ............ [NO] ....... [NO]
+ [WARNING]  using untested triton version (2.0.0), only 1.0.0 is known to be compatible
+sparse_attn ............ [NO] ....... [NO]
+transformer_inference .. [NO] ....... [OKAY]
+utils .................. [NO] ....... [OKAY]
+--------------------------------------------------
+ [WARNING]  using untested triton version (2.0.0), only 1.0.0 is known to be compatible
+sparse_attn ............ [NO] ....... [NO]
+DeepSpeed general environment info:
+torch install path ............... ['/usr/local/lib/python3.8/dist-packages/torch']
+torch version .................... 1.13.1+cu117
+deepspeed install path ........... ['/usr/local/lib/python3.8/dist-packages/deepspeed']
+deepspeed info ................... 0.8.3, unknown, unknown
+torch cuda version ............... 11.7
+torch hip version ................ None
+nvcc version ..................... 11.7
+deepspeed wheel compiled w. ...... torch 1.13, cuda 11.7
+ [WARNING]  using untested triton version (2.0.0), only 1.0.0 is known to be compatible
+sparse_attn ............ [NO] ....... [NO]
+ [WARNING]  using untested triton version (2.0.0), only 1.0.0 is known to be compatible
+sparse_attn ............ [NO] ....... [NO]
+**** Git info for Megatron: git_hash=7bbd7f0 git_branch=main ****
+ [WARNING]  using untested triton version (2.0.0), only 1.0.0 is known to be compatible
+sparse_attn ............ [NO] ....... [NO]
+spatial_inference ...... [NO] ....... [OKAY]
+transformer ............ [NO] ....... [OKAY]
+stochastic_transformer . [NO] ....... [OKAY]
+transformer_inference .. [NO] ....... [OKAY]
+utils .................. [NO] ....... [OKAY]
+--------------------------------------------------
+DeepSpeed general environment info:
+torch install path ............... ['/usr/local/lib/python3.8/dist-packages/torch']
+torch version .................... 1.13.1+cu117
+deepspeed install path ........... ['/usr/local/lib/python3.8/dist-packages/deepspeed']
+deepspeed info ................... 0.8.3, unknown, unknown
+torch cuda version ............... 11.7
+torch hip version ................ None
+nvcc version ..................... 11.7
+deepspeed wheel compiled w. ...... torch 1.13, cuda 11.7
+**** Git info for Megatron: git_hash=7bbd7f0 git_branch=main ****
+spatial_inference ...... [NO] ....... [OKAY]
+transformer ............ [NO] ....... [OKAY]
+stochastic_transformer . [NO] ....... [OKAY]
+spatial_inference ...... [NO] ....... [OKAY]
+transformer ............ [NO] ....... [OKAY]
+stochastic_transformer . [NO] ....... [OKAY]
+transformer_inference .. [NO] ....... [OKAY]
+utils .................. [NO] ....... [OKAY]
+--------------------------------------------------
+spatial_inference ...... [NO] ....... [OKAY]
+transformer ............ [NO] ....... [OKAY]
+stochastic_transformer . [NO] ....... [OKAY]
+transformer_inference .. [NO] ....... [OKAY]
+utils .................. [NO] ....... [OKAY]
+--------------------------------------------------
+DeepSpeed general environment info:
+torch install path ............... ['/usr/local/lib/python3.8/dist-packages/torch']
+torch version .................... 1.13.1+cu117
+deepspeed install path ........... ['/usr/local/lib/python3.8/dist-packages/deepspeed']
+deepspeed info ................... 0.8.3, unknown, unknown
+torch cuda version ............... 11.7
+torch hip version ................ None
+nvcc version ..................... 11.7
+deepspeed wheel compiled w. ...... torch 1.13, cuda 11.7
+DeepSpeed general environment info:
+torch install path ............... ['/usr/local/lib/python3.8/dist-packages/torch']
+torch version .................... 1.13.1+cu117
+deepspeed install path ........... ['/usr/local/lib/python3.8/dist-packages/deepspeed']
+deepspeed info ................... 0.8.3, unknown, unknown
+torch cuda version ............... 11.7
+torch hip version ................ None
+nvcc version ..................... 11.7
+deepspeed wheel compiled w. ...... torch 1.13, cuda 11.7
+transformer_inference .. [NO] ....... [OKAY]
+utils .................. [NO] ....... [OKAY]
+--------------------------------------------------
+DeepSpeed general environment info:
+torch install path ............... ['/usr/local/lib/python3.8/dist-packages/torch']
+torch version .................... 1.13.1+cu117
+deepspeed install path ........... ['/usr/local/lib/python3.8/dist-packages/deepspeed']
+deepspeed info ................... 0.8.3, unknown, unknown
+torch cuda version ............... 11.7
+torch hip version ................ None
+nvcc version ..................... 11.7
+deepspeed wheel compiled w. ...... torch 1.13, cuda 11.7
+spatial_inference ...... [NO] ....... [OKAY]
+transformer ............ [NO] ....... [OKAY]
+stochastic_transformer . [NO] ....... [OKAY]
+transformer_inference .. [NO] ....... [OKAY]
+utils .................. [NO] ....... [OKAY]
+--------------------------------------------------
+spatial_inference ...... [NO] ....... [OKAY]
+transformer ............ [NO] ....... [OKAY]
+stochastic_transformer . [NO] ....... [OKAY]
+DeepSpeed general environment info:
+torch install path ............... ['/usr/local/lib/python3.8/dist-packages/torch']
+torch version .................... 1.13.1+cu117
+deepspeed install path ........... ['/usr/local/lib/python3.8/dist-packages/deepspeed']
+deepspeed info ................... 0.8.3, unknown, unknown
+torch cuda version ............... 11.7
+torch hip version ................ None
+nvcc version ..................... 11.7
+deepspeed wheel compiled w. ...... torch 1.13, cuda 11.7
+**** Git info for Megatron: git_hash=7bbd7f0 git_branch=main ****
+**** Git info for Megatron: git_hash=7bbd7f0 git_branch=main ****
+transformer_inference .. [NO] ....... [OKAY]
+utils .................. [NO] ....... [OKAY]
+--------------------------------------------------
+spatial_inference ...... [NO] ....... [OKAY]
+transformer ............ [NO] ....... [OKAY]
+stochastic_transformer . [NO] ....... [OKAY]
+**** Git info for Megatron: git_hash=7bbd7f0 git_branch=main ****
+DeepSpeed general environment info:
+torch install path ............... ['/usr/local/lib/python3.8/dist-packages/torch']
+torch version .................... 1.13.1+cu117
+deepspeed install path ........... ['/usr/local/lib/python3.8/dist-packages/deepspeed']
+deepspeed info ................... 0.8.3, unknown, unknown
+torch cuda version ............... 11.7
+torch hip version ................ None
+nvcc version ..................... 11.7
+deepspeed wheel compiled w. ...... torch 1.13, cuda 11.7
+transformer_inference .. [NO] ....... [OKAY]
+utils .................. [NO] ....... [OKAY]
+--------------------------------------------------
+**** Git info for Megatron: git_hash=7bbd7f0 git_branch=main ****
+DeepSpeed general environment info:
+torch install path ............... ['/usr/local/lib/python3.8/dist-packages/torch']
+torch version .................... 1.13.1+cu117
+deepspeed install path ........... ['/usr/local/lib/python3.8/dist-packages/deepspeed']
+deepspeed info ................... 0.8.3, unknown, unknown
+torch cuda version ............... 11.7
+torch hip version ................ None
+nvcc version ..................... 11.7
+deepspeed wheel compiled w. ...... torch 1.13, cuda 11.7
+**** Git info for Megatron: git_hash=7bbd7f0 git_branch=main ****
+**** Git info for Megatron: git_hash=7bbd7f0 git_branch=main ****
+using world size: 48, data-parallel-size: 1, tensor-model-parallel size: 8, pipeline-model-parallel size: 6 
+accumulate and all-reduce gradients in fp32 for bfloat16 data type.
+using torch.bfloat16 for parameters ...
+------------------------ arguments ------------------------
+  accumulate_allreduce_grads_in_fp32 .............. True
+  adam_beta1 ...................................... 0.9
+  adam_beta2 ...................................... 0.999
+  adam_eps ........................................ 1e-08
+  adlr_autoresume ................................. False
+  adlr_autoresume_interval ........................ 1000
+  aml_data_download_path .......................... None
+  apply_query_key_layer_scaling ................... True
+  apply_residual_connection_post_layernorm ........ False
+  attention_dropout ............................... 0.1
+  attention_softmax_in_fp32 ....................... False
+  bert_binary_head ................................ True
+  bert_load ....................................... None
+  bf16 ............................................ True
+  bias_dropout_fusion ............................. True
+  bias_gelu_fusion ................................ True
+  biencoder_projection_dim ........................ 0
+  biencoder_shared_query_context_model ............ False
+  block_data_path ................................. None
+  checkpoint_activations .......................... True
+  checkpoint_in_cpu ............................... False
+  checkpoint_num_layers ........................... 1
+  clip_grad ....................................... 1.0
+  compression_training ............................ False
+  consumed_train_samples .......................... 0
+  consumed_train_tokens ........................... 0
+  consumed_valid_samples .......................... 0
+  contigious_checkpointing ........................ False
+  cpu_optimizer ................................... False
+  cpu_torch_adam .................................. False
+  create_moe_param_group .......................... False
+  curriculum_learning_legacy ...................... False
+  custom_token_counting ........................... False
+  data_efficiency_curriculum_learning ............. False
+  data_impl ....................................... mmap
+  data_parallel_size .............................. 1
+  data_path ....................................... ['/data/gpt_data/my-gpt2_text_document']
+  dataloader_type ................................. single
+  DDP_impl ........................................ local
+  decoder_seq_length .............................. None
+  deepscale ....................................... False
+  deepscale_config ................................ None
+  deepspeed ....................................... False
+  deepspeed_activation_checkpointing .............. False
+  deepspeed_config ................................ None
+  deepspeed_mpi ................................... False
+  distribute_checkpointed_activations ............. False
+  distributed_backend ............................. nccl
+  ds_inference .................................... False
+  ds_pipeline_enabled ............................. True
+  embedding_path .................................. None
+  enable_expert_tensor_parallelism ................ False
+  encoder_seq_length .............................. 1024
+  eod_mask_loss ................................... False
+  eval_interval ................................... 10
+  eval_iters ...................................... 10
+  evidence_data_path .............................. None
+  exit_duration_in_mins ........................... None
+  exit_interval ................................... None
+  expert_interval ................................. 2
+  ffn_hidden_size ................................. 49152
+  finetune ........................................ False
+  fp16 ............................................ False
+  fp16_lm_cross_entropy ........................... False
+  fp32_residual_connection ........................ False
+  global_batch_size ............................... 768
+  hidden_dropout .................................. 0.1
+  hidden_size ..................................... 12288
+  hidden_size_teacher ............................. None
+  hysteresis ...................................... 2
+  ict_head_size ................................... None
+  ict_load ........................................ None
+  img_dim ......................................... 224
+  indexer_batch_size .............................. 128
+  indexer_log_interval ............................ 1000
+  inference ....................................... False
+  init_method_std ................................. 0.02
+  init_method_xavier_uniform ...................... False
+  initial_loss_scale .............................. 4294967296
+  kd .............................................. False
+  kd_alpha_ce ..................................... 1
+  kd_beta_ce ...................................... 1
+  kd_temp ......................................... 1.0
+  kv_channels ..................................... 192
+  layernorm_epsilon ............................... 1e-05
+  lazy_mpu_init ................................... None
+  load ............................................ /data/checkpoints
+  load_teacher .................................... None
+  local_rank ...................................... None
+  log_batch_size_to_tensorboard ................... False
+  log_interval .................................... 1
+  log_learning_rate_to_tensorboard ................ True
+  log_loss_scale_to_tensorboard ................... True
+  log_num_zeros_in_grad ........................... False
+  log_optimizer_states_to_tensorboard ............. False
+  log_params_norm ................................. False
+  log_timers_to_tensorboard ....................... False
+  log_validation_ppl_to_tensorboard ............... False
+  loss_scale ...................................... None
+  loss_scale_window ............................... 1000
+  lr .............................................. 0.00015
+  lr_decay_iters .................................. 320000
+  lr_decay_samples ................................ None
+  lr_decay_style .................................. cosine
+  lr_decay_tokens ................................. None
+  lr_warmup_fraction .............................. 0.01
+  lr_warmup_iters ................................. 0
+  lr_warmup_samples ............................... 0
+  lr_warmup_tokens ................................ None
+  make_vocab_size_divisible_by .................... 128
+  mask_prob ....................................... 0.15
+  masked_softmax_fusion ........................... True
+  max_position_embeddings ......................... 1024
+  memory_centric_tiled_linear ..................... False
+  merge_file ...................................... /data/gpt_data/vocabs/gpt2-merges.txt
+  micro_batch_size ................................ 4
+  min_loss_scale .................................. 1.0
+  min_lr .......................................... 1e-05
+  mlp_type ........................................ standard
+  mmap_warmup ..................................... False
+  moe_eval_capacity_factor ........................ 1.0
+  moe_expert_parallel_size ........................ 1
+  moe_loss_coeff .................................. 0.1
+  moe_min_capacity ................................ 4
+  moe_token_dropping .............................. True
+  moe_train_capacity_factor ....................... 1.0
+  mos ............................................. False
+  no_load_lr_state ................................ False
+  no_load_optim ................................... None
+  no_load_rng ..................................... None
+  no_pipeline_parallel ............................ False
+  no_save_optim ................................... None
+  no_save_rng ..................................... None
+  num_attention_heads ............................. 64
+  num_attention_heads_teacher ..................... None
+  num_channels .................................... 3
+  num_classes ..................................... 1000
+  num_experts ..................................... [1]
+  num_experts_teacher ............................. [1]
+  num_layers ...................................... 78
+  num_layers_per_virtual_pipeline_stage ........... None
+  num_layers_teacher .............................. None
+  num_workers ..................................... 2
+  onnx_safe ....................................... None
+  openai_gelu ..................................... False
+  optimizer ....................................... adam
+  override_lr_scheduler ........................... False
+  params_dtype .................................... torch.bfloat16
+  partition_activations ........................... False
+  patch_dim ....................................... 16
+  pipeline_model_parallel_size .................... 6
+  profile_backward ................................ False
+  query_in_block_prob ............................. 0.1
+  rampup_batch_size ............................... None
+  random_ltd ...................................... False
+  rank ............................................ 0
+  remote_device ................................... none
+  reset_attention_mask ............................ False
+  reset_iteration ................................. False
+  reset_position_ids .............................. False
+  retriever_report_topk_accuracies ................ []
+  retriever_score_scaling ......................... False
+  retriever_seq_length ............................ 256
+  return_data_index ............................... False
+  sample_rate ..................................... 1.0
+  save ............................................ /data/checkpoints
+  save_interval ................................... 10
+  scatter_gather_tensors_in_pipeline .............. True
+  scattered_embeddings ............................ False
+  seed ............................................ 1234
+  seq_length ...................................... 1024
+  sgd_momentum .................................... 0.9
+  short_seq_prob .................................. 0.1
+  split ........................................... 949,50,1
+  split_transformers .............................. False
+  synchronize_each_layer .......................... False
+  tensor_model_parallel_size ...................... 8
+  tensorboard_dir ................................. None
+  tensorboard_log_interval ........................ 1
+  tensorboard_queue_size .......................... 1000
+  tile_factor ..................................... 1
+  titles_data_path ................................ None
+  tokenizer_type .................................. GPT2BPETokenizer
+  topk ............................................ 1
+  train_data_exact_num_epochs ..................... None
+  train_doc_idx_path .............................. None
+  train_idx_path .................................. None
+  train_iters ..................................... 500000
+  train_sample_idx_path ........................... None
+  train_samples ................................... None
+  train_shuffle_idx_path .......................... None
+  train_tokens .................................... None
+  use_checkpoint_lr_scheduler ..................... False
+  use_contiguous_buffers_in_ddp ................... True
+  use_cpu_initialization .......................... None
+  use_one_sent_docs ............................... False
+  use_pin_memory .................................. False
+  use_tutel ....................................... False
+  virtual_pipeline_model_parallel_size ............ None
+  vocab_extra_ids ................................. 0
+  vocab_file ...................................... /data/gpt_data/vocabs/gpt2-vocab.json
+  weight_decay .................................... 0.01
+  world_size ...................................... 48
+  zero_allgather_bucket_size ...................... 0.0
+  zero_contigious_gradients ....................... False
+  zero_reduce_bucket_size ......................... 0.0
+  zero_reduce_scatter ............................. False
+  zero_stage ...................................... 1.0
+-------------------- end of arguments ---------------------
+setting number of micro-batches to constant 192
+> building GPT2BPETokenizer tokenizer ...
+ > padded vocab (size: 50257) with 943 dummy tokens (new size: 51200)
+> initializing torch distributed ...
+> initializing tensor model parallel with size 8
+> initializing pipeline model parallel with size 6
+> setting random seeds to 1234 ...
+> initializing model parallel cuda seeds on global rank 0, model parallel rank 0, and data parallel rank 0 with model parallel seed: 3952 and data parallel seed: 1234
+> compiling dataset index builder ...
+make: Entering directory '/data/Megatron-deepspeed/megatron/data'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/data/Megatron-deepspeed/megatron/data'
+>>> done with dataset index builder. Compilation time: 0.051 seconds
+> compiling and loading fused kernels ...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /data/Megatron-deepspeed/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_upper_triang_masked_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_upper_triang_masked_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /data/Megatron-deepspeed/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_masked_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_masked_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /data/Megatron-deepspeed/megatron/fused_kernels/build/build.ninja...
+Building extension module fused_mix_prec_layer_norm_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_mix_prec_layer_norm_cuda...
+>>> done with compiling and loading fused kernels. Compilation time: 6.664 seconds
+time to initialize megatron (seconds): -1.237
+[after megatron is initialized] datetime: 2023-04-17 14:38:54 
+building GPT model ...
+[2023-04-17 14:38:54,825] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 14:38:54,825] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 14:38:54,825] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 14:38:54,825] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 14:38:54,825] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 14:38:54,825] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 14:38:54,825] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 14:38:54,825] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 14:38:54,825] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.64 GB, percent = 2.1%
+[2023-04-17 14:38:54,825] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.64 GB, percent = 2.1%
+[2023-04-17 14:38:54,826] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 14:38:54,826] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 14:38:54,826] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 14:38:54,826] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.64 GB, percent = 2.1%
+[2023-04-17 14:38:54,826] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 14:38:54,826] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.64 GB, percent = 2.1%
+[2023-04-17 14:38:54,826] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 14:38:54,826] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.64 GB, percent = 2.1%
+[2023-04-17 14:38:54,826] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.64 GB, percent = 2.1%
+[2023-04-17 14:38:54,826] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 14:38:54,826] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.64 GB, percent = 2.1%
+[2023-04-17 14:38:54,827] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 14:38:54,827] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 14:38:54,827] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.64 GB, percent = 2.1%
+ > number of parameters on (tensor, pipeline) model parallel rank (6, 0): 3036725760
+ > number of parameters on (tensor, pipeline) model parallel rank (5, 0): 3036725760
+ > number of parameters on (tensor, pipeline) model parallel rank (7, 0): 3036725760
+ > number of parameters on (tensor, pipeline) model parallel rank (4, 0): 3036725760
+ > number of parameters on (tensor, pipeline) model parallel rank (1, 0): 3036725760
+ > number of parameters on (tensor, pipeline) model parallel rank (2, 0): 3036725760
+ > number of parameters on (tensor, pipeline) model parallel rank (3, 0): 3036725760
+[2023-04-17 14:38:55,438] [INFO] [utils.py:829:see_memory_usage] After Building Model
+[2023-04-17 14:38:55,438] [INFO] [utils.py:830:see_memory_usage] MA 5.63 GB         Max_MA 5.63 GB         CA 5.63 GB         Max_CA 6 GB 
+[2023-04-17 14:38:55,438] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 22.38 GB, percent = 2.2%
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 3036725760
+> learning rate decay style: cosine
+WARNING: could not find the metadata file /data/checkpoints/latest_checkpointed_iteration.txt 
+    will not load any checkpoints and will start from random
+[after model, optimizer, and learning rate scheduler are built] datetime: 2023-04-17 14:38:55 
+> building train, validation, and test datasets ...
+ > datasets target sizes (minimum size):
+    train:      384000000
+    validation: 384007680
+    test:       7680
+> building train, validation, and test datasets for GPT ...
+ > building dataset index ...
+    reading sizes...
+    reading pointers...
+    reading document index...
+    creating numpy buffer of mmap...
+    creating memory view of numpy buffer...
+ > finished creating indexed dataset in 0.000448 seconds
+    number of documents: 6412235
+ > dataset split:
+    train:
+     document indices in [0, 6085211) total of 6085211 documents
+    validation:
+     document indices in [6085211, 6405823) total of 320612 documents
+    test:
+     document indices in [6405823, 6412235) total of 6412 documents
+ > loading doc-idx mapping from /data/gpt_data/my-gpt2_text_document_train_indexmap_384000000ns_1024sl_1234s_doc_idx.npy
+ > loading sample-idx mapping from /data/gpt_data/my-gpt2_text_document_train_indexmap_384000000ns_1024sl_1234s_sample_idx.npy
+ > loading shuffle-idx mapping from /data/gpt_data/my-gpt2_text_document_train_indexmap_384000000ns_1024sl_1234s_shuffle_idx.npy
+    loaded indexed file in 0.001 seconds
+    total number of samples: 385937385
+    total number of epochs: 124
+ > loading doc-idx mapping from /data/gpt_data/my-gpt2_text_document_valid_indexmap_384007680ns_1024sl_1234s_doc_idx.npy
+ > loading sample-idx mapping from /data/gpt_data/my-gpt2_text_document_valid_indexmap_384007680ns_1024sl_1234s_sample_idx.npy
+ > loading shuffle-idx mapping from /data/gpt_data/my-gpt2_text_document_valid_indexmap_384007680ns_1024sl_1234s_shuffle_idx.npy
+    loaded indexed file in 0.001 seconds
+    total number of samples: 384061378
+    total number of epochs: 2689
+ > loading doc-idx mapping from /data/gpt_data/my-gpt2_text_document_test_indexmap_7680ns_1024sl_1234s_doc_idx.npy
+ > loading sample-idx mapping from /data/gpt_data/my-gpt2_text_document_test_indexmap_7680ns_1024sl_1234s_sample_idx.npy
+ > loading shuffle-idx mapping from /data/gpt_data/my-gpt2_text_document_test_indexmap_7680ns_1024sl_1234s_shuffle_idx.npy
+    loaded indexed file in 0.001 seconds
+    total number of samples: 9135
+    total number of epochs: 4
+> finished creating GPT datasets ...
+[after dataloaders are built] datetime: 2023-04-17 14:38:58 
+done with setup ...
+training ...
+[before the start of training step] datetime: 2023-04-17 14:38:58 
+
+
+
+ > number of parameters on (tensor, pipeline) model parallel rank (7, 1): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (3, 1): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (5, 1): 2945499648 > number of parameters on (tensor, pipeline) model parallel rank (1, 1): 2945499648
+
+ > number of parameters on (tensor, pipeline) model parallel rank (6, 1): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (2, 1): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 1): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (4, 1): 2945499648
+
+
+ > number of parameters on (tensor, pipeline) model parallel rank (7, 2): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (3, 2): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (6, 2): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (1, 2): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (5, 2): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (2, 2): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (4, 2): 2945499648
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 2): 2945499648
+
+ > number of parameters on (tensor, pipeline) model parallel rank (6, 5): 3024167424
+ > number of parameters on (tensor, pipeline) model parallel rank (7, 5): 3024167424
+ > number of parameters on (tensor, pipeline) model parallel rank (5, 5): 3024167424
+ > number of parameters on (tensor, pipeline) model parallel rank (4, 5): 3024167424
+ > number of parameters on (tensor, pipeline) model parallel rank (1, 5): 3024167424
+ > number of parameters on (tensor, pipeline) model parallel rank (2, 5): 3024167424
+ > number of parameters on (tensor, pipeline) model parallel rank (3, 5): 3024167424
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 5): 3024167424
+
+time (ms) | load-checkpoint: 0.37
+time (ms) | model-and-optimizer-setup: 1083.62 | train/valid/test-data-iterators-setup: 2716.89
+ iteration        1/  500000 | consumed samples:          768 | consumed tokens:       786432 | elapsed time per iteration (ms): 129171.6 | learning rate: 4.688E-08 | global batch size:   768 | lm loss: 1.321247E+01 | loss scale: 1.0 | grad norm: 152.051 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 5.946 | TFLOPs: 145.88 |[Rank 40] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.37060546875 | reserved: 52792.0 | max reserved: 52792.0
+
+[Rank 47] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.37060546875 | reserved: 52792.0 | max reserved: 52792.0
+time (ms) | forward-compute: 31279.86 | forward-recv: 6597.86 | backward-compute: 84097.77 | backward-send: 2.16 | backward-send-forward-recv: 1969.29 | backward-params-all-reduce: 14.39 | backward-embedding-all-reduce: 2378.10 | optimizer-copy-to-main-grad: 0.18 | optimizer-clip-main-grad: 2202.08 | optimizer-copy-main-to-model-params: 17.56 | optimizer: 2791.66 | batch-generator: 196.26
+[Rank 41] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.37060546875 | reserved: 52792.0 | max reserved: 52792.0
+[Rank 45] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.37060546875 | reserved: 52816.0 | max reserved: 52816.0[Rank 44] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.37060546875 | reserved: 52792.0 | max reserved: 52792.0
+
+[Rank 46] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.37060546875 | reserved: 52816.0 | max reserved: 52816.0
+[Rank 43] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.37060546875 | reserved: 52816.0 | max reserved: 52816.0
+[Rank 42] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.37060546875 | reserved: 52816.0 | max reserved: 52816.0
+ iteration        2/  500000 | consumed samples:         1536 | consumed tokens:      1572864 | elapsed time per iteration (ms): 117859.2 | learning rate: 9.375E-08 | global batch size:   768 | lm loss: 1.321132E+01 | loss scale: 1.0 | grad norm: 150.283 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.516 | TFLOPs: 159.88 |
+time (ms) | forward-compute: 30053.16 | forward-recv: 668.30 | backward-compute: 84038.51 | backward-send: 2.16 | backward-send-forward-recv: 722.63 | backward-params-all-reduce: 14.36 | backward-embedding-all-reduce: 2221.68 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.08 | optimizer-copy-main-to-model-params: 16.19 | optimizer: 98.91 | batch-generator: 194.88
+ iteration        3/  500000 | consumed samples:         2304 | consumed tokens:      2359296 | elapsed time per iteration (ms): 118124.5 | learning rate: 1.406E-07 | global batch size:   768 | lm loss: 1.321201E+01 | loss scale: 1.0 | grad norm: 151.311 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.502 | TFLOPs: 159.52 |
+time (ms) | forward-compute: 30017.87 | forward-recv: 765.99 | backward-compute: 84047.56 | backward-send: 2.12 | backward-send-forward-recv: 920.55 | backward-params-all-reduce: 14.37 | backward-embedding-all-reduce: 2219.71 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.09 | optimizer-copy-main-to-model-params: 16.19 | optimizer: 98.85 | batch-generator: 182.12
+ iteration        4/  500000 | consumed samples:         3072 | consumed tokens:      3145728 | elapsed time per iteration (ms): 118244.0 | learning rate: 1.875E-07 | global batch size:   768 | lm loss: 1.310807E+01 | loss scale: 1.0 | grad norm: 150.674 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.495 | TFLOPs: 159.36 |
+time (ms) | forward-compute: 30016.60 | forward-recv: 768.99 | backward-compute: 84058.95 | backward-send: 2.15 | backward-send-forward-recv: 1027.50 | backward-params-all-reduce: 14.35 | backward-embedding-all-reduce: 2218.72 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.35 | optimizer-copy-main-to-model-params: 16.18 | optimizer: 99.14 | batch-generator: 178.33
+ iteration        5/  500000 | consumed samples:         3840 | consumed tokens:      3932160 | elapsed time per iteration (ms): 118466.3 | learning rate: 2.344E-07 | global batch size:   768 | lm loss: 1.277378E+01 | loss scale: 1.0 | grad norm: 150.472 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.483 | TFLOPs: 159.06 |
+time (ms) | forward-compute: 29965.58 | forward-recv: 768.65 | backward-compute: 84014.63 | backward-send: 2.24 | backward-send-forward-recv: 1348.41 | backward-params-all-reduce: 14.33 | backward-embedding-all-reduce: 2216.34 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.30 | optimizer-copy-main-to-model-params: 16.18 | optimizer: 99.06 | batch-generator: 169.81
+ iteration        6/  500000 | consumed samples:         4608 | consumed tokens:      4718592 | elapsed time per iteration (ms): 118275.5 | learning rate: 2.812E-07 | global batch size:   768 | lm loss: 1.264043E+01 | loss scale: 1.0 | grad norm: 150.108 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.493 | TFLOPs: 159.32 |
+time (ms) | forward-compute: 29980.03 | forward-recv: 766.66 | backward-compute: 84001.45 | backward-send: 2.16 | backward-send-forward-recv: 1154.74 | backward-params-all-reduce: 14.34 | backward-embedding-all-reduce: 2219.82 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.39 | optimizer-copy-main-to-model-params: 16.17 | optimizer: 99.10 | batch-generator: 176.42
+ iteration        7/  500000 | consumed samples:         5376 | consumed tokens:      5505024 | elapsed time per iteration (ms): 118239.1 | learning rate: 3.281E-07 | global batch size:   768 | lm loss: 1.195918E+01 | loss scale: 1.0 | grad norm: 500.473 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.495 | TFLOPs: 159.37 |
+time (ms) | forward-compute: 29981.93 | forward-recv: 767.09 | backward-compute: 83973.08 | backward-send: 2.19 | backward-send-forward-recv: 1146.31 | backward-params-all-reduce: 14.36 | backward-embedding-all-reduce: 2217.78 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.28 | optimizer-copy-main-to-model-params: 16.18 | optimizer: 99.06 | batch-generator: 175.14
+ iteration        8/  500000 | consumed samples:         6144 | consumed tokens:      6291456 | elapsed time per iteration (ms): 118238.8 | learning rate: 3.750E-07 | global batch size:   768 | lm loss: 1.668136E+01 | loss scale: 1.0 | grad norm: 1014.073 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.495 | TFLOPs: 159.37 |
+time (ms) | forward-compute: 29972.91 | forward-recv: 768.75 | backward-compute: 83967.27 | backward-send: 2.32 | backward-send-forward-recv: 1157.08 | backward-params-all-reduce: 14.37 | backward-embedding-all-reduce: 2219.84 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.32 | optimizer-copy-main-to-model-params: 16.17 | optimizer: 99.14 | batch-generator: 174.54
+ iteration        9/  500000 | consumed samples:         6912 | consumed tokens:      7077888 | elapsed time per iteration (ms): 118203.3 | learning rate: 4.219E-07 | global batch size:   768 | lm loss: 2.174788E+01 | loss scale: 1.0 | grad norm: 830.372 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.497 | TFLOPs: 159.42 |
+time (ms) | forward-compute: 29963.46 | forward-recv: 767.51 | backward-compute: 83934.38 | backward-send: 2.37 | backward-send-forward-recv: 1167.35 | backward-params-all-reduce: 14.36 | backward-embedding-all-reduce: 2217.55 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.30 | optimizer-copy-main-to-model-params: 16.18 | optimizer: 99.03 | batch-generator: 173.49
+ iteration       10/  500000 | consumed samples:         7680 | consumed tokens:      7864320 | elapsed time per iteration (ms): 118132.5 | learning rate: 4.687E-07 | global batch size:   768 | lm loss: 2.148431E+01 | loss scale: 1.0 | grad norm: 934.084 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.501 | TFLOPs: 159.51 |
+time (ms) | forward-compute: 29960.31 | forward-recv: 767.14 | backward-compute: 83937.79 | backward-send: 2.17 | backward-send-forward-recv: 1094.13 | backward-params-all-reduce: 14.37 | backward-embedding-all-reduce: 2219.60 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.86 | optimizer-copy-main-to-model-params: 16.18 | optimizer: 99.59 | batch-generator: 177.20
+
+
+  successfully saved checkpoint at iteration      10 to /data/checkpoints
+Checkpoint Save GB: 2040.68, GB/Sec: 5.43, Latency(second): 375.948
+
+gpu2 : 317G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu2 : 317G     /home/lanrui/fred/checkpoints/
+gpu5 : 308G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu5 : 308G     /home/lanrui/fred/checkpoints/
+gpu8 : 316G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu8 : 316G     /home/lanrui/fred/checkpoints/
+gpu6 : 308G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu6 : 308G     /home/lanrui/fred/checkpoints/
+gpu3 : 308G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu3 : 308G     /home/lanrui/fred/checkpoints/
+gpu4 : 308G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu4 : 308G     /home/lanrui/fred/checkpoints/
+
+
+
+
+time (ms) | load-checkpoint: 0.50
+time (ms) | model-and-optimizer-setup: 1182.39 | train/valid/test-data-iterators-setup: 2806.71
+[Rank 42] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.32373046875 | reserved: 52792.0 | max reserved: 52792.0
+[Rank 40] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.32373046875 | reserved: 52792.0 | max reserved: 52792.0
+[Rank 46] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.32373046875 | reserved: 52792.0 | max reserved: 52792.0
+ iteration        1/  500000 | consumed samples:          384 | consumed tokens:       393216 | elapsed time per iteration (ms): 71427.9 | learning rate: 4.688E-08 | global batch size:   384 | lm loss: 1.322667E+01 | loss scale: 1.0 | grad norm: 151.072 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 5.376 | TFLOPs: 131.91 |
+[Rank 47] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.32373046875 | reserved: 52816.0 | max reserved: 52816.0
+time (ms) | forward-compute: 16223.86 | forward-recv: 6560.57 | backward-compute: 41886.34 | backward-send: 2.20 | backward-send-forward-recv: 1550.81 | backward-params-all-reduce: 14.34 | backward-embedding-all-reduce: 2366.34 | optimizer-copy-to-main-grad: 0.18 | optimizer-clip-main-grad: 2204.71 | optimizer-copy-main-to-model-params: 16.70 | optimizer: 2797.71 | batch-generator: 100.52
+[Rank 45] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.32373046875 | reserved: 52792.0 | max reserved: 52792.0
+[Rank 44] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.32373046875 | reserved: 52816.0 | max reserved: 52816.0
+[Rank 41] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.32373046875 | reserved: 52792.0 | max reserved: 52792.0
+[Rank 43] (after 1 iterations) memory (MB) | allocated: 52105.27685546875 | max allocated: 52105.32373046875 | reserved: 52816.0 | max reserved: 52816.0
+ iteration        2/  500000 | consumed samples:          768 | consumed tokens:       786432 | elapsed time per iteration (ms): 60301.0 | learning rate: 9.375E-08 | global batch size:   384 | lm loss: 1.321093E+01 | loss scale: 1.0 | grad norm: 152.345 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.368 | TFLOPs: 156.25 |
+time (ms) | forward-compute: 15011.57 | forward-recv: 674.27 | backward-compute: 41936.51 | backward-send: 2.16 | backward-send-forward-recv: 324.37 | backward-params-all-reduce: 14.36 | backward-embedding-all-reduce: 2213.62 | optimizer-copy-to-main-grad: 0.23 | optimizer-clip-main-grad: 25.06 | optimizer-copy-main-to-model-params: 16.25 | optimizer: 99.19 | batch-generator: 104.73
+ iteration        3/  500000 | consumed samples:         1152 | consumed tokens:      1179648 | elapsed time per iteration (ms): 60514.8 | learning rate: 1.406E-07 | global batch size:   384 | lm loss: 1.322330E+01 | loss scale: 1.0 | grad norm: 151.447 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.346 | TFLOPs: 155.70 |
+time (ms) | forward-compute: 15014.50 | forward-recv: 766.37 | backward-compute: 41962.07 | backward-send: 2.28 | backward-send-forward-recv: 417.41 | backward-params-all-reduce: 14.37 | backward-embedding-all-reduce: 2215.14 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.68 | optimizer-copy-main-to-model-params: 16.19 | optimizer: 99.66 | batch-generator: 97.53
+ iteration        4/  500000 | consumed samples:         1536 | consumed tokens:      1572864 | elapsed time per iteration (ms): 60597.3 | learning rate: 1.875E-07 | global batch size:   384 | lm loss: 1.309869E+01 | loss scale: 1.0 | grad norm: 153.849 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.337 | TFLOPs: 155.48 |
+time (ms) | forward-compute: 15029.36 | forward-recv: 769.40 | backward-compute: 42022.06 | backward-send: 2.15 | backward-send-forward-recv: 421.53 | backward-params-all-reduce: 14.36 | backward-embedding-all-reduce: 2215.62 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.81 | optimizer-copy-main-to-model-params: 16.18 | optimizer: 99.74 | batch-generator: 97.07
+ iteration        5/  500000 | consumed samples:         1920 | consumed tokens:      1966080 | elapsed time per iteration (ms): 60625.5 | learning rate: 2.344E-07 | global batch size:   384 | lm loss: 1.277158E+01 | loss scale: 1.0 | grad norm: 153.731 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.334 | TFLOPs: 155.41 |
+time (ms) | forward-compute: 15017.64 | forward-recv: 768.35 | backward-compute: 42013.79 | backward-send: 2.12 | backward-send-forward-recv: 471.52 | backward-params-all-reduce: 14.34 | backward-embedding-all-reduce: 2215.99 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.00 | optimizer-copy-main-to-model-params: 16.18 | optimizer: 98.95 | batch-generator: 94.57
+ iteration        6/  500000 | consumed samples:         2304 | consumed tokens:      2359296 | elapsed time per iteration (ms): 60707.0 | learning rate: 2.812E-07 | global batch size:   384 | lm loss: 1.264605E+01 | loss scale: 1.0 | grad norm: 151.552 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.325 | TFLOPs: 155.20 |
+time (ms) | forward-compute: 15017.22 | forward-recv: 768.29 | backward-compute: 42023.00 | backward-send: 2.14 | backward-send-forward-recv: 543.22 | backward-params-all-reduce: 14.36 | backward-embedding-all-reduce: 2217.46 | optimizer-copy-to-main-grad: 0.15 | optimizer-clip-main-grad: 24.98 | optimizer-copy-main-to-model-params: 16.17 | optimizer: 98.79 | batch-generator: 92.82
+ iteration        7/  500000 | consumed samples:         2688 | consumed tokens:      2752512 | elapsed time per iteration (ms): 60657.6 | learning rate: 3.281E-07 | global batch size:   384 | lm loss: 1.195158E+01 | loss scale: 1.0 | grad norm: 486.034 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.331 | TFLOPs: 155.33 |
+time (ms) | forward-compute: 15025.03 | forward-recv: 770.11 | backward-compute: 42031.67 | backward-send: 2.12 | backward-send-forward-recv: 473.56 | backward-params-all-reduce: 14.34 | backward-embedding-all-reduce: 2219.01 | optimizer-copy-to-main-grad: 0.16 | optimizer-clip-main-grad: 25.17 | optimizer-copy-main-to-model-params: 16.19 | optimizer: 99.15 | batch-generator: 96.21
+ iteration        8/  500000 | consumed samples:         3072 | consumed tokens:      3145728 | elapsed time per iteration (ms): 60690.6 | learning rate: 3.750E-07 | global batch size:   384 | lm loss: 1.624133E+01 | loss scale: 1.0 | grad norm: 995.445 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.327 | TFLOPs: 155.24 |
+time (ms) | forward-compute: 14991.94 | forward-recv: 766.79 | backward-compute: 41976.10 | backward-send: 2.17 | backward-send-forward-recv: 599.03 | backward-params-all-reduce: 14.35 | backward-embedding-all-reduce: 2219.06 | optimizer-copy-to-main-grad: 0.15 | optimizer-clip-main-grad: 25.00 | optimizer-copy-main-to-model-params: 16.20 | optimizer: 98.85 | batch-generator: 91.20
+ iteration        9/  500000 | consumed samples:         3456 | consumed tokens:      3538944 | elapsed time per iteration (ms): 60663.5 | learning rate: 4.219E-07 | global batch size:   384 | lm loss: 2.169965E+01 | loss scale: 1.0 | grad norm: 850.452 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.330 | TFLOPs: 155.31 |
+time (ms) | forward-compute: 15007.89 | forward-recv: 768.66 | backward-compute: 42000.03 | backward-send: 2.17 | backward-send-forward-recv: 534.26 | backward-params-all-reduce: 14.34 | backward-embedding-all-reduce: 2214.36 | optimizer-copy-to-main-grad: 0.15 | optimizer-clip-main-grad: 25.45 | optimizer-copy-main-to-model-params: 16.17 | optimizer: 99.23 | batch-generator: 93.17
+ iteration       10/  500000 | consumed samples:         3840 | consumed tokens:      3932160 | elapsed time per iteration (ms): 60789.5 | learning rate: 4.687E-07 | global batch size:   384 | lm loss: 2.163388E+01 | loss scale: 1.0 | grad norm: 937.747 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.317 | TFLOPs: 154.99 |
+time (ms) | forward-compute: 14977.49 | forward-recv: 768.40 | backward-compute: 41984.05 | backward-send: 2.17 | backward-send-forward-recv: 705.02 | backward-params-all-reduce: 14.36 | backward-embedding-all-reduce: 2216.77 | optimizer-copy-to-main-grad: 0.16 | optimizer-clip-main-grad: 25.02 | optimizer-copy-main-to-model-params: 16.19 | optimizer: 99.06 | batch-generator: 86.78
+----------------------------------------------------------------------------------------------
+ validation loss at iteration 10 | lm loss value: 2.480160E+01 | lm loss PPL: 4.851652E+08 | 
+----------------------------------------------------------------------------------------------
+
+time (ms) | save-checkpoint: 375946.96
+ iteration       11/  500000 | consumed samples:         4224 | consumed tokens:      4325376 | elapsed time per iteration (ms): 582784.5 | learning rate: 5.156E-07 | global batch size:   384 | lm loss: 2.239668E+01 | loss scale: 1.0 | grad norm: 1090.382 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 0.659 | TFLOPs: 16.17 |
+time (ms) | forward-compute: 156982.44 | forward-recv: 5395.68 | backward-compute: 41703.84 | backward-send: 1.98 | backward-send-forward-recv: 342.07 | backward-params-all-reduce: 14.36 | backward-embedding-all-reduce: 2213.14 | optimizer-copy-to-main-grad: 0.22 | optimizer-clip-main-grad: 25.56 | optimizer-copy-main-to-model-params: 16.22 | optimizer: 99.61 | batch-generator: 554.24 | save-checkpoint: 0.00
+ iteration       12/  500000 | consumed samples:         4608 | consumed tokens:      4718592 | elapsed time per iteration (ms): 60342.2 | learning rate: 5.625E-07 | global batch size:   384 | lm loss: 2.556794E+01 | loss scale: 1.0 | grad norm: 1278.864 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.364 | TFLOPs: 156.14 |
+time (ms) | forward-compute: 14996.88 | forward-recv: 766.19 | backward-compute: 41905.32 | backward-send: 2.23 | backward-send-forward-recv: 324.82 | backward-params-all-reduce: 14.33 | backward-embedding-all-reduce: 2212.12 | optimizer-copy-to-main-grad: 0.20 | optimizer-clip-main-grad: 25.27 | optimizer-copy-main-to-model-params: 16.21 | optimizer: 99.17 | batch-generator: 92.07 | save-checkpoint: 0.00
+ iteration       13/  500000 | consumed samples:         4992 | consumed tokens:      5111808 | elapsed time per iteration (ms): 60452.1 | learning rate: 6.094E-07 | global batch size:   384 | lm loss: 2.650593E+01 | loss scale: 1.0 | grad norm: 880.619 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.352 | TFLOPs: 155.86 |
+time (ms) | forward-compute: 14995.85 | forward-recv: 765.22 | backward-compute: 41955.03 | backward-send: 1.92 | backward-send-forward-recv: 384.17 | backward-params-all-reduce: 14.32 | backward-embedding-all-reduce: 2215.24 | optimizer-copy-to-main-grad: 0.16 | optimizer-clip-main-grad: 25.06 | optimizer-copy-main-to-model-params: 16.21 | optimizer: 99.08 | batch-generator: 89.27 | save-checkpoint: 0.00
+
+ iteration       14/  500000 | consumed samples:         5376 | consumed tokens:      5505024 | elapsed time per iteration (ms): 60505.7 | learning rate: 6.562E-07 | global batch size:   384 | lm loss: 2.626475E+01 | loss scale: 1.0 | grad norm: 1035.625 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.347 | TFLOPs: 155.72 |
+time (ms) | forward-compute: 14997.59 | forward-recv: 768.25 | backward-compute: 41958.31 | backward-send: 1.97 | backward-send-forward-recv: 430.58 | backward-params-all-reduce: 14.36 | backward-embedding-all-reduce: 2214.21 | optimizer-copy-to-main-grad: 0.21 | optimizer-clip-main-grad: 25.13 | optimizer-copy-main-to-model-params: 16.22 | optimizer: 99.11 | batch-generator: 91.98 | save-checkpoint: 0.00
+ iteration       15/  500000 | consumed samples:         5760 | consumed tokens:      5898240 | elapsed time per iteration (ms): 60563.2 | learning rate: 7.031E-07 | global batch size:   384 | lm loss: 2.194275E+01 | loss scale: 1.0 | grad norm: 714.513 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.340 | TFLOPs: 155.57 |
+time (ms) | forward-compute: 14987.04 | forward-recv: 766.92 | backward-compute: 41962.75 | backward-send: 2.03 | backward-send-forward-recv: 493.66 | backward-params-all-reduce: 14.34 | backward-embedding-all-reduce: 2215.89 | optimizer-copy-to-main-grad: 0.24 | optimizer-clip-main-grad: 25.12 | optimizer-copy-main-to-model-params: 16.20 | optimizer: 99.12 | batch-generator: 91.45 | save-checkpoint: 0.00
+ iteration       16/  500000 | consumed samples:         6144 | consumed tokens:      6291456 | elapsed time per iteration (ms): 60603.8 | learning rate: 7.500E-07 | global batch size:   384 | lm loss: 2.050441E+01 | loss scale: 1.0 | grad norm: 745.395 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.336 | TFLOPs: 155.47 |
+time (ms) | forward-compute: 14970.85 | forward-recv: 767.53 | backward-compute: 41954.55 | backward-send: 1.92 | backward-send-forward-recv: 557.46 | backward-params-all-reduce: 14.34 | backward-embedding-all-reduce: 2217.76 | optimizer-copy-to-main-grad: 0.14 | optimizer-clip-main-grad: 24.95 | optimizer-copy-main-to-model-params: 16.18 | optimizer: 98.84 | batch-generator: 87.27 | save-checkpoint: 0.00
+ iteration       17/  500000 | consumed samples:         6528 | consumed tokens:      6684672 | elapsed time per iteration (ms): 60602.2 | learning rate: 7.969E-07 | global batch size:   384 | lm loss: 1.810553E+01 | loss scale: 1.0 | grad norm: 564.472 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.336 | TFLOPs: 155.47 |
+time (ms) | forward-compute: 14951.42 | forward-recv: 767.70 | backward-compute: 41932.99 | backward-send: 1.85 | backward-send-forward-recv: 596.71 | backward-params-all-reduce: 14.32 | backward-embedding-all-reduce: 2217.50 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.84 | optimizer-copy-main-to-model-params: 16.18 | optimizer: 99.67 | batch-generator: 84.53 | save-checkpoint: 0.00
+ iteration       18/  500000 | consumed samples:         6912 | consumed tokens:      7077888 | elapsed time per iteration (ms): 60592.9 | learning rate: 8.437E-07 | global batch size:   384 | lm loss: 1.756091E+01 | loss scale: 1.0 | grad norm: 612.496 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.337 | TFLOPs: 155.49 |
+time (ms) | forward-compute: 14952.32 | forward-recv: 766.72 | backward-compute: 41943.03 | backward-send: 1.92 | backward-send-forward-recv: 583.12 | backward-params-all-reduce: 14.31 | backward-embedding-all-reduce: 2212.40 | optimizer-copy-to-main-grad: 0.16 | optimizer-clip-main-grad: 24.98 | optimizer-copy-main-to-model-params: 16.19 | optimizer: 98.95 | batch-generator: 86.32 | save-checkpoint: 0.00
+ iteration       19/  500000 | consumed samples:         7296 | consumed tokens:      7471104 | elapsed time per iteration (ms): 60579.3 | learning rate: 8.906E-07 | global batch size:   384 | lm loss: 1.701580E+01 | loss scale: 1.0 | grad norm: 462.499 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.339 | TFLOPs: 155.53 |
+time (ms) | forward-compute: 14948.88 | forward-recv: 765.97 | backward-compute: 41941.70 | backward-send: 2.00 | backward-send-forward-recv: 573.80 | backward-params-all-reduce: 14.34 | backward-embedding-all-reduce: 2213.15 | optimizer-copy-to-main-grad: 0.16 | optimizer-clip-main-grad: 25.29 | optimizer-copy-main-to-model-params: 16.18 | optimizer: 99.21 | batch-generator: 85.01 | save-checkpoint: 0.00
+ iteration       20/  500000 | consumed samples:         7680 | consumed tokens:      7864320 | elapsed time per iteration (ms): 60641.6 | learning rate: 9.375E-07 | global batch size:   384 | lm loss: 1.614087E+01 | loss scale: 1.0 | grad norm: 319.350 | actual seqlen:  1024 | number of skipped iterations:   0 | number of nan iterations:   0 | samples per second: 6.332 | TFLOPs: 155.37 |
+time (ms) | forward-compute: 14925.35 | forward-recv: 764.24 | backward-compute: 41908.11 | backward-send: 2.02 | backward-send-forward-recv: 693.27 | backward-params-all-reduce: 14.33 | backward-embedding-all-reduce: 2215.02 | optimizer-copy-to-main-grad: 0.17 | optimizer-clip-main-grad: 25.32 | optimizer-copy-main-to-model-params: 16.17 | optimizer: 99.13 | batch-generator: 82.60 | save-checkpoint: 0.00
+
+----------------------------------------------------------------------------------------------
+ validation loss at iteration 20 | lm loss value: 1.521288E+01 | lm loss PPL: 4.044536E+06 | 
+----------------------------------------------------------------------------------------------
+time (ms) | save-checkpoint: 471318.73
+
+  successfully saved checkpoint at iteration      20 to /data/checkpoints
+Checkpoint Save GB: 2040.68, GB/Sec: 4.33, Latency(second): 471.32
+
+
+
+
+gpu2 : 317G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu2 : 317G     /home/lanrui/fred/checkpoints/iter_0000020
+gpu2 : 634G     /home/lanrui/fred/checkpoints/
+gpu3 : 308G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu3 : 308G     /home/lanrui/fred/checkpoints/iter_0000020
+gpu3 : 615G     /home/lanrui/fred/checkpoints/
+gpu4 : 308G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu4 : 308G     /home/lanrui/fred/checkpoints/iter_0000020
+gpu4 : 615G     /home/lanrui/fred/checkpoints/
+gpu5 : 308G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu5 : 308G     /home/lanrui/fred/checkpoints/iter_0000020
+gpu5 : 615G     /home/lanrui/fred/checkpoints/
+gpu6 : 308G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu6 : 308G     /home/lanrui/fred/checkpoints/iter_0000020
+gpu6 : 615G     /home/lanrui/fred/checkpoints/
+gpu8 : 316G     /home/lanrui/fred/checkpoints/iter_0000010
+gpu8 : 316G     /home/lanrui/fred/checkpoints/iter_0000020
+gpu8 : 631G     /home/lanrui/fred/checkpoints/
