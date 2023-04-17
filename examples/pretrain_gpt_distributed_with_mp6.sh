@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# Runs the "345M" parameter model
+# Runs the "76B" parameter model
 
 GPUS_PER_NODE=8
 # Change for multinode config
@@ -20,12 +20,12 @@ torchrun $DISTRIBUTED_ARGS \
        pretrain_gpt.py \
        --tensor-model-parallel-size 8 \
        --pipeline-model-parallel-size 2 \
-       --num-layers 24 \
-       --hidden-size 1024 \
-       --num-attention-heads 16 \
+       --num-layers 60 \
+       --hidden-size 10240 \
+       --num-attention-heads 32 \
        --micro-batch-size 4 \
-       --global-batch-size 64 \
-       --seq-length 1024 \
+       --global-batch-size 512 \
+       --seq-length 2048 \
        --max-position-embeddings 1024 \
        --train-iters 500000 \
        --lr-decay-iters 320000 \

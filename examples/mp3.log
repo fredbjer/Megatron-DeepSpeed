@@ -1,0 +1,378 @@
+49719MiB / 81920MiB VRAM with 2*8 A100 
+69075MiB
+
+
+
+using world size: 16, data-parallel-size: 1, tensor-model-parallel size: 8, pipeline-model-parallel size: 2 
+using torch.float16 for parameters ...
+------------------------ arguments ------------------------
+  accumulate_allreduce_grads_in_fp32 .............. False
+  adam_beta1 ...................................... 0.9
+  adam_beta2 ...................................... 0.999
+  adam_eps ........................................ 1e-08
+  adlr_autoresume ................................. False
+  adlr_autoresume_interval ........................ 1000
+  aml_data_download_path .......................... None
+  apply_query_key_layer_scaling ................... True
+  apply_residual_connection_post_layernorm ........ False
+  attention_dropout ............................... 0.1
+  attention_softmax_in_fp32 ....................... False
+  bert_binary_head ................................ True
+  bert_load ....................................... None
+  bf16 ............................................ False
+  bias_dropout_fusion ............................. True
+  bias_gelu_fusion ................................ True
+  biencoder_projection_dim ........................ 0
+  biencoder_shared_query_context_model ............ False
+  block_data_path ................................. None
+  checkpoint_activations .......................... True
+  checkpoint_in_cpu ............................... False
+  checkpoint_num_layers ........................... 1
+  clip_grad ....................................... 1.0
+  compression_training ............................ False
+  consumed_train_samples .......................... 0
+  consumed_train_tokens ........................... 0
+  consumed_valid_samples .......................... 0
+  contigious_checkpointing ........................ False
+  cpu_optimizer ................................... False
+  cpu_torch_adam .................................. False
+  create_moe_param_group .......................... False
+  curriculum_learning_legacy ...................... False
+  custom_token_counting ........................... False
+  data_efficiency_curriculum_learning ............. False
+  data_impl ....................................... mmap
+  data_parallel_size .............................. 1
+  data_path ....................................... ['/data/gpt_data/my-gpt2_text_document']
+  dataloader_type ................................. single
+  DDP_impl ........................................ local
+  decoder_seq_length .............................. None
+  deepscale ....................................... False
+  deepscale_config ................................ None
+  deepspeed ....................................... False
+  deepspeed_activation_checkpointing .............. False
+  deepspeed_config ................................ None
+  deepspeed_mpi ................................... False
+  distribute_checkpointed_activations ............. False
+  distributed_backend ............................. nccl
+  ds_inference .................................... False
+  ds_pipeline_enabled ............................. True
+  embedding_path .................................. None
+  enable_expert_tensor_parallelism ................ False
+  encoder_seq_length .............................. 1024
+  eod_mask_loss ................................... False
+  eval_interval ................................... 10
+  eval_iters ...................................... 10
+  evidence_data_path .............................. None
+  exit_duration_in_mins ........................... None
+  exit_interval ................................... None
+  expert_interval ................................. 2
+  ffn_hidden_size ................................. 32768
+  finetune ........................................ False
+  fp16 ............................................ True
+  fp16_lm_cross_entropy ........................... False
+  fp32_residual_connection ........................ False
+  global_batch_size ............................... 512
+  hidden_dropout .................................. 0.1
+  hidden_size ..................................... 8192
+  hidden_size_teacher ............................. None
+  hysteresis ...................................... 2
+  ict_head_size ................................... None
+  ict_load ........................................ None
+  img_dim ......................................... 224
+  indexer_batch_size .............................. 128
+  indexer_log_interval ............................ 1000
+  inference ....................................... False
+  init_method_std ................................. 0.02
+  init_method_xavier_uniform ...................... False
+  initial_loss_scale .............................. 4294967296
+  kd .............................................. False
+  kd_alpha_ce ..................................... 1
+  kd_beta_ce ...................................... 1
+  kd_temp ......................................... 1.0
+  kv_channels ..................................... 256
+  layernorm_epsilon ............................... 1e-05
+  lazy_mpu_init ................................... None
+  load ............................................ /data/checkpoints
+  load_teacher .................................... None
+  local_rank ...................................... None
+  log_batch_size_to_tensorboard ................... False
+  log_interval .................................... 10
+  log_learning_rate_to_tensorboard ................ True
+  log_loss_scale_to_tensorboard ................... True
+  log_num_zeros_in_grad ........................... False
+  log_optimizer_states_to_tensorboard ............. False
+  log_params_norm ................................. False
+  log_timers_to_tensorboard ....................... False
+  log_validation_ppl_to_tensorboard ............... False
+  loss_scale ...................................... None
+  loss_scale_window ............................... 1000
+  lr .............................................. 0.00015
+  lr_decay_iters .................................. 320000
+  lr_decay_samples ................................ None
+  lr_decay_style .................................. cosine
+  lr_decay_tokens ................................. None
+  lr_warmup_fraction .............................. 0.01
+  lr_warmup_iters ................................. 0
+  lr_warmup_samples ............................... 0
+  lr_warmup_tokens ................................ None
+  make_vocab_size_divisible_by .................... 128
+  mask_prob ....................................... 0.15
+  masked_softmax_fusion ........................... True
+  max_position_embeddings ......................... 1024
+  memory_centric_tiled_linear ..................... False
+  merge_file ...................................... /data/gpt_data/vocabs/gpt2-merges.txt
+  micro_batch_size ................................ 4
+  min_loss_scale .................................. 1.0
+  min_lr .......................................... 1e-05
+  mlp_type ........................................ standard
+  mmap_warmup ..................................... False
+  moe_eval_capacity_factor ........................ 1.0
+  moe_expert_parallel_size ........................ 1
+  moe_loss_coeff .................................. 0.1
+  moe_min_capacity ................................ 4
+  moe_token_dropping .............................. True
+  moe_train_capacity_factor ....................... 1.0
+  mos ............................................. False
+  no_load_lr_state ................................ False
+  no_load_optim ................................... None
+  no_load_rng ..................................... None
+  no_pipeline_parallel ............................ False
+  no_save_optim ................................... None
+  no_save_rng ..................................... None
+  num_attention_heads ............................. 32
+  num_attention_heads_teacher ..................... None
+  num_channels .................................... 3
+  num_classes ..................................... 1000
+  num_experts ..................................... [1]
+  num_experts_teacher ............................. [1]
+  num_layers ...................................... 48
+  num_layers_per_virtual_pipeline_stage ........... None
+  num_layers_teacher .............................. None
+  num_workers ..................................... 2
+  onnx_safe ....................................... None
+  openai_gelu ..................................... False
+  optimizer ....................................... adam
+  override_lr_scheduler ........................... False
+  params_dtype .................................... torch.float16
+  partition_activations ........................... False
+  patch_dim ....................................... 16
+  pipeline_model_parallel_size .................... 2
+  profile_backward ................................ False
+  query_in_block_prob ............................. 0.1
+  rampup_batch_size ............................... None
+  random_ltd ...................................... False
+  rank ............................................ 0
+  remote_device ................................... none
+  reset_attention_mask ............................ False
+  reset_iteration ................................. False
+  reset_position_ids .............................. False
+  retriever_report_topk_accuracies ................ []
+  retriever_score_scaling ......................... False
+  retriever_seq_length ............................ 256
+  return_data_index ............................... False
+  sample_rate ..................................... 1.0
+  save ............................................ /data/checkpoints
+  save_interval ................................... 10
+  scatter_gather_tensors_in_pipeline .............. True
+  scattered_embeddings ............................ False
+  seed ............................................ 1234
+  seq_length ...................................... 1024
+  sgd_momentum .................................... 0.9
+  short_seq_prob .................................. 0.1
+  split ........................................... 949,50,1
+  split_transformers .............................. False
+  synchronize_each_layer .......................... False
+  tensor_model_parallel_size ...................... 8
+  tensorboard_dir ................................. None
+  tensorboard_log_interval ........................ 1
+  tensorboard_queue_size .......................... 1000
+  tile_factor ..................................... 1
+  titles_data_path ................................ None
+  tokenizer_type .................................. GPT2BPETokenizer
+  topk ............................................ 1
+  train_data_exact_num_epochs ..................... None
+  train_doc_idx_path .............................. None
+  train_idx_path .................................. None
+  train_iters ..................................... 500000
+  train_sample_idx_path ........................... None
+  train_samples ................................... None
+  train_shuffle_idx_path .......................... None
+  train_tokens .................................... None
+  use_checkpoint_lr_scheduler ..................... False
+  use_contiguous_buffers_in_ddp ................... False
+  use_cpu_initialization .......................... None
+  use_one_sent_docs ............................... False
+  use_pin_memory .................................. False
+  use_tutel ....................................... False
+  virtual_pipeline_model_parallel_size ............ None
+  vocab_extra_ids ................................. 0
+  vocab_file ...................................... /data/gpt_data/vocabs/gpt2-vocab.json
+  weight_decay .................................... 0.01
+  world_size ...................................... 16
+  zero_allgather_bucket_size ...................... 0.0
+  zero_contigious_gradients ....................... False
+  zero_reduce_bucket_size ......................... 0.0
+  zero_reduce_scatter ............................. False
+  zero_stage ...................................... 1.0
+-------------------- end of arguments ---------------------
+setting number of micro-batches to constant 128
+> building GPT2BPETokenizer tokenizer ...
+**** Git info for Megatron: git_hash=7bbd7f0 git_branch=main ****
+ > padded vocab (size: 50257) with 943 dummy tokens (new size: 51200)
+> initializing torch distributed ...
+> initializing tensor model parallel with size 8
+> initializing pipeline model parallel with size 2
+> setting random seeds to 1234 ...
+> initializing model parallel cuda seeds on global rank 0, model parallel rank 0, and data parallel rank 0 with model parallel seed: 3952 and data parallel seed: 1234
+> compiling dataset index builder ...
+make: Entering directory '/data/Megatron-deepspeed/megatron/data'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/data/Megatron-deepspeed/megatron/data'
+>>> done with dataset index builder. Compilation time: 0.061 seconds
+> compiling and loading fused kernels ...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /data/Megatron-deepspeed/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_upper_triang_masked_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_upper_triang_masked_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /data/Megatron-deepspeed/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_masked_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_masked_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /data/Megatron-deepspeed/megatron/fused_kernels/build/build.ninja...
+Building extension module fused_mix_prec_layer_norm_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_mix_prec_layer_norm_cuda...
+>>> done with compiling and loading fused kernels. Compilation time: 6.626 seconds
+time to initialize megatron (seconds): -22.422
+[after megatron is initialized] datetime: 2023-04-17 10:26:49 
+building GPT model ...
+[2023-04-17 10:26:49,636] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 10:26:49,636] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 10:26:49,637] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 10:26:49,637] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 10:26:49,637] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 10:26:49,637] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 10:26:49,637] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.31 GB, percent = 2.1%
+[2023-04-17 10:26:49,637] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.31 GB, percent = 2.1%
+[2023-04-17 10:26:49,637] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 10:26:49,637] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.31 GB, percent = 2.1%
+[2023-04-17 10:26:49,637] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 10:26:49,638] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 10:26:49,638] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.31 GB, percent = 2.1%
+[2023-04-17 10:26:49,638] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 10:26:49,638] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.31 GB, percent = 2.1%
+[2023-04-17 10:26:49,638] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 10:26:49,638] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 10:26:49,639] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 10:26:49,639] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 10:26:49,639] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.31 GB, percent = 2.1%
+[2023-04-17 10:26:49,639] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 10:26:49,639] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.31 GB, percent = 2.1%
+[2023-04-17 10:26:49,639] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 10:26:49,639] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.31 GB, percent = 2.1%
+ > number of parameters on (tensor, pipeline) model parallel rank (4, 0): 2478088192
+ > number of parameters on (tensor, pipeline) model parallel rank (3, 0): 2478088192
+[2023-04-17 10:26:50,125] [INFO] [utils.py:829:see_memory_usage] After Building Model
+[2023-04-17 10:26:50,125] [INFO] [utils.py:830:see_memory_usage] MA 4.6 GB         Max_MA 4.6 GB         CA 4.6 GB         Max_CA 5 GB 
+[2023-04-17 10:26:50,125] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.73 GB, percent = 2.2%
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 2478088192
+ > number of parameters on (tensor, pipeline) model parallel rank (1, 0): 2478088192
+ > number of parameters on (tensor, pipeline) model parallel rank (5, 0): 2478088192
+ > number of parameters on (tensor, pipeline) model parallel rank (6, 0): 2478088192
+ > number of parameters on (tensor, pipeline) model parallel rank (7, 0): 2478088192
+ > number of parameters on (tensor, pipeline) model parallel rank (2, 0): 2478088192
+> learning rate decay style: cosine
+WARNING: could not find the metadata file /data/checkpoints/latest_checkpointed_iteration.txt 
+    will not load any checkpoints and will start from random
+[after model, optimizer, and learning rate scheduler are built] datetime: 2023-04-17 10:26:50 
+> building train, validation, and test datasets ...
+ > datasets target sizes (minimum size):
+    train:      256000000
+    validation: 256005120
+    test:       5120
+> building train, validation, and test datasets for GPT ...
+ > building dataset index ...
+    reading sizes...
+    reading pointers...
+    reading document index...
+    creating numpy buffer of mmap...
+    creating memory view of numpy buffer...
+ > finished creating indexed dataset in 0.000242 seconds
+    number of documents: 6412235
+ > dataset split:
+    train:
+     document indices in [0, 6085211) total of 6085211 documents
+    validation:
+     document indices in [6085211, 6405823) total of 320612 documents
+    test:
+     document indices in [6405823, 6412235) total of 6412 documents
+ > loading doc-idx mapping from /data/gpt_data/my-gpt2_text_document_train_indexmap_256000000ns_1024sl_1234s_doc_idx.npy
+ > loading sample-idx mapping from /data/gpt_data/my-gpt2_text_document_train_indexmap_256000000ns_1024sl_1234s_sample_idx.npy
+ > loading shuffle-idx mapping from /data/gpt_data/my-gpt2_text_document_train_indexmap_256000000ns_1024sl_1234s_shuffle_idx.npy
+    loaded indexed file in 0.030 seconds
+    total number of samples: 258329056
+    total number of epochs: 83
+ > loading doc-idx mapping from /data/gpt_data/my-gpt2_text_document_valid_indexmap_256005120ns_1024sl_1234s_doc_idx.npy
+ > loading sample-idx mapping from /data/gpt_data/my-gpt2_text_document_valid_indexmap_256005120ns_1024sl_1234s_sample_idx.npy
+ > loading shuffle-idx mapping from /data/gpt_data/my-gpt2_text_document_valid_indexmap_256005120ns_1024sl_1234s_shuffle_idx.npy
+    loaded indexed file in 0.001 seconds
+    total number of samples: 256088528
+    total number of epochs: 1793
+ > loading doc-idx mapping from /data/gpt_data/my-gpt2_text_document_test_indexmap_5120ns_1024sl_1234s_doc_idx.npy
+ > loading sample-idx mapping from /data/gpt_data/my-gpt2_text_document_test_indexmap_5120ns_1024sl_1234s_sample_idx.npy
+ > loading shuffle-idx mapping from /data/gpt_data/my-gpt2_text_document_test_indexmap_5120ns_1024sl_1234s_shuffle_idx.npy
+    loaded indexed file in 0.001 seconds
+    total number of samples: 6851
+    total number of epochs: 3
+> finished creating GPT datasets ...
+[after dataloaders are built] datetime: 2023-04-17 10:26:52 
+done with setup ...
+training ...
+[before the start of training step] datetime: 2023-04-17 10:26:52 
+
+  successfully saved checkpoint at iteration      10 to /data/checkpoints
+Checkpoint Save GB: 555.092, GB/Sec: 27.14, Latency(second): 20.454
+
+ iteration       10/  500000 | consumed samples:         5120 | consumed tokens:      5242880 | elapsed time per iteration (ms): 74052.2 | learning rate: 0.000E+00 | global batch size:   512 | loss scale: 8388608.0 | actual seqlen:  1024 | number of skipped iterations:  10 | number of nan iterations:   0 | samples per second: 6.914 | TFLOPs: 140.80 |
+time (ms) | forward-compute: 20476.36 | forward-recv: 279.08 | backward-compute: 52114.70 | backward-send: 1.47 | backward-send-forward-recv: 438.13 | backward-params-all-reduce: 56.99 | backward-embedding-all-reduce: 442.91 | optimizer-copy-to-main-grad: 14.25 | optimizer-unscale-and-check-inf: 198.09 | optimizer: 212.44 | batch-generator: 175.90
+----------------------------------------------------------------------------------------------
+ validation loss at iteration 10 | lm loss value: 1.268454E+01 | lm loss PPL: 3.227214E+05 | 
+----------------------------------------------------------------------------------------------
+time (ms) | save-checkpoint: 20454.37
+
+ iteration       20/  500000 | consumed samples:        10240 | consumed tokens:     10485760 | elapsed time per iteration (ms): 96136.2 | learning rate: 2.344E-07 | global batch size:   512 | lm loss: 1.241472E+01 | loss scale: 262144.0 | grad norm: 98.621 | actual seqlen:  1024 | number of skipped iterations:   5 | number of nan iterations:   0 | samples per second: 5.326 | TFLOPs: 108.46 |
+[Rank 13] (after 20 iterations) memory (MB) | allocated: 47234.0986328125 | max allocated: 54181.85107421875 | reserved: 64806.0 | max reserved: 64806.0
+[Rank 8] (after 20 iterations) memory (MB) | allocated: 47234.0986328125 | max allocated: 54181.85107421875 | reserved: 64806.0 | max reserved: 64806.0
+[Rank 15] (after 20 iterations) memory (MB) | allocated: 47234.0986328125 | max allocated: 54181.85107421875 | reserved: 64806.0 | max reserved: 64806.0
+time (ms) | forward-compute: 39461.71 | forward-recv: 436.28 | backward-compute: 53094.17 | backward-send: 1.53 | backward-send-forward-recv: 496.69 | backward-params-all-reduce: 45.16 | backward-embedding-all-reduce: 433.51 | optimizer-copy-to-main-grad: 13.36 | optimizer-unscale-and-check-inf: 14.06 | optimizer-clip-main-grad: 10.53 | optimizer-copy-main-to-model-params: 6.81 | optimizer: 83.07 | batch-generator: 233.17 | save-checkpoint: 0.00[Rank 12] (after 20 iterations) memory (MB) | allocated: 47234.0986328125 | max allocated: 54181.85107421875 | reserved: 64806.0 | max reserved: 64806.0
+
+[Rank 14] (after 20 iterations) memory (MB) | allocated: 47234.0986328125 | max allocated: 54181.85107421875 | reserved: 64838.0 | max reserved: 64838.0
+[Rank 11] (after 20 iterations) memory (MB) | allocated: 47234.0986328125 | max allocated: 54181.85107421875 | reserved: 64538.0 | max reserved: 64538.0
+[Rank 9] (after 20 iterations) memory (MB) | allocated: 47234.0986328125 | max allocated: 54181.85107421875 | reserved: 64726.0 | max reserved: 64726.0
+[Rank 10] (after 20 iterations) memory (MB) | allocated: 47234.0986328125 | max allocated: 54181.85107421875 | reserved: 64774.0 | max reserved: 64774.0
+----------------------------------------------------------------------------------------------
+ validation loss at iteration 20 | lm loss value: 1.129941E+01 | lm loss PPL: 8.077380E+04 | 
+----------------------------------------------------------------------------------------------
+
+[Rank 4] (after 20 iterations) memory (MB) | allocated: 47265.78515625 | max allocated: 56022.5283203125 | reserved: 66610.0 | max reserved: 66610.0
+[Rank 7] (after 20 iterations) memory (MB) | allocated: 47265.78515625 | max allocated: 56022.5283203125 | reserved: 66610.0 | max reserved: 66610.0
+[Rank 0] (after 20 iterations) memory (MB) | allocated: 47265.78515625 | max allocated: 56022.5283203125 | reserved: 66610.0 | max reserved: 66610.0
+[Rank 5] (after 20 iterations) memory (MB) | allocated: 47265.78515625 | max allocated: 56022.5283203125 | reserved: 66702.0 | max reserved: 66702.0
+[Rank 2] (after 20 iterations) memory (MB) | allocated: 47265.78515625 | max allocated: 56022.5283203125 | reserved: 66690.0 | max reserved: 66690.0
+[Rank 3] (after 20 iterations) memory (MB) | allocated: 47265.78515625 | max allocated: 56022.5283203125 | reserved: 66702.0 | max reserved: 66702.0
+[Rank 1] (after 20 iterations) memory (MB) | allocated: 47265.78515625 | max allocated: 56022.5283203125 | reserved: 66610.0 | max reserved: 66610.0
+[Rank 6] (after 20 iterations) memory (MB) | allocated: 47265.78515625 | max allocated: 56022.5283203125 | reserved: 66610.0 | max reserved: 66610.0
+
+time (ms) | save-checkpoint: 216707.91
+saving checkpoint at iteration      20 to /data/checkpoints
+  successfully saved checkpoint at iteration      20 to /data/checkpoints
+Checkpoint Save GB: 555.092, GB/Sec: 2.56, Latency(second): 216.706
+
+111G    ./iter_0000010
+259G    ./iter_0000020

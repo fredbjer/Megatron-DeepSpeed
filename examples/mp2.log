@@ -1,0 +1,174 @@
+9385MiB / 81920MiB  VRAM with 2*8 A100 
+
+52.743 GB checkpoints 
+
+-rw-r--r-- 1 root   root    2020290180 Apr 17 16:32 my-gpt2_text_document_train_indexmap_256000000ns_1024sl_1234s_doc_idx.npy
+-rw-r--r-- 1 root   root    2066632576 Apr 17 16:32 my-gpt2_text_document_train_indexmap_256000000ns_1024sl_1234s_sample_idx.npy
+-rw-r--r-- 1 root   root    1033316348 Apr 17 16:32 my-gpt2_text_document_train_indexmap_256000000ns_1024sl_1234s_shuffle_idx.npy
+-rw-r--r-- 1 root   root      23084192 Apr 17 16:32 my-gpt2_text_document_valid_indexmap_2565120ns_1024sl_1234s_doc_idx.npy
+-rw-r--r-- 1 root   root      20567200 Apr 17 16:32 my-gpt2_text_document_valid_indexmap_2565120ns_1024sl_1234s_sample_idx.npy
+-rw-r--r-- 1 root   root      10283660 Apr 17 16:32 my-gpt2_text_document_valid_indexmap_2565120ns_1024sl_1234s_shuffle_idx.npy
+-rw-r--r-- 1 root   root         77072 Apr 17 16:34 my-gpt2_text_document_test_indexmap_5120ns_1024sl_1234s_doc_idx.npy
+-rw-r--r-- 1 root   root         27528 Apr 17 16:34 my-gpt2_text_document_test_indexmap_5120ns_1024sl_1234s_shuffle_idx.npy
+-rw-r--r-- 1 root   root         54936 Apr 17 16:34 my-gpt2_text_document_test_indexmap_5120ns_1024sl_1234s_sample_idx.npy
+
+> initializing tensor model parallel with size 8
+> initializing pipeline model parallel with size 2
+> setting random seeds to 1234 ...
+> initializing model parallel cuda seeds on global rank 0, model parallel rank 0, and data parallel rank 0 with model parallel seed: 3952 and data parallel seed: 1234
+> compiling dataset index builder ...
+make: Entering directory '/data/Megatron-deepspeed/megatron/data'
+make: Nothing to be done for 'default'.
+make: Leaving directory '/data/Megatron-deepspeed/megatron/data'
+>>> done with dataset index builder. Compilation time: 0.064 seconds
+> compiling and loading fused kernels ...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /data/Megatron-deepspeed/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_upper_triang_masked_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_upper_triang_masked_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /data/Megatron-deepspeed/megatron/fused_kernels/build/build.ninja...
+Building extension module scaled_masked_softmax_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module scaled_masked_softmax_cuda...
+Detected CUDA files, patching ldflags
+Emitting ninja build file /data/Megatron-deepspeed/megatron/fused_kernels/build/build.ninja...
+Building extension module fused_mix_prec_layer_norm_cuda...
+Allowing ninja to set a default number of workers... (overridable by setting the environment variable MAX_JOBS=N)
+ninja: no work to do.
+Loading extension module fused_mix_prec_layer_norm_cuda...
+>>> done with compiling and loading fused kernels. Compilation time: 8.192 seconds
+time to initialize megatron (seconds): -16.894
+[after megatron is initialized] datetime: 2023-04-17 08:53:03 
+building GPT model ...
+[2023-04-17 08:53:03,179] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 08:53:03,179] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 08:53:03,179] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 08:53:03,179] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 08:53:03,180] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 08:53:03,180] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 08:53:03,180] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 08:53:03,180] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 08:53:03,180] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 08:53:03,180] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.94 GB, percent = 2.2%
+[2023-04-17 08:53:03,180] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.94 GB, percent = 2.2%
+[2023-04-17 08:53:03,180] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.94 GB, percent = 2.2%
+[2023-04-17 08:53:03,180] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.94 GB, percent = 2.2%
+[2023-04-17 08:53:03,181] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 08:53:03,181] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 08:53:03,181] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 08:53:03,181] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.94 GB, percent = 2.2%
+[2023-04-17 08:53:03,181] [INFO] [utils.py:829:see_memory_usage] Before Building Model
+[2023-04-17 08:53:03,181] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 08:53:03,181] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 08:53:03,182] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.94 GB, percent = 2.2%
+[2023-04-17 08:53:03,182] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.94 GB, percent = 2.2%
+[2023-04-17 08:53:03,182] [INFO] [utils.py:830:see_memory_usage] MA 0.0 GB         Max_MA 0.0 GB         CA 0.0 GB         Max_CA 0 GB 
+[2023-04-17 08:53:03,182] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.94 GB, percent = 2.2%
+ > number of parameters on (tensor, pipeline) model parallel rank (6, 0): 235459968
+ > number of parameters on (tensor, pipeline) model parallel rank (5, 0): 235459968
+ > number of parameters on (tensor, pipeline) model parallel rank (4, 0): 235459968 > number of parameters on (tensor, pipeline) model parallel rank (7, 0): 235459968
+
+ > number of parameters on (tensor, pipeline) model parallel rank (2, 0): 235459968
+ > number of parameters on (tensor, pipeline) model parallel rank (3, 0): 235459968
+ > number of parameters on (tensor, pipeline) model parallel rank (1, 0): 235459968
+[2023-04-17 08:53:03,693] [INFO] [utils.py:829:see_memory_usage] After Building Model
+[2023-04-17 08:53:03,694] [INFO] [utils.py:830:see_memory_usage] MA 0.43 GB         Max_MA 0.43 GB         CA 0.49 GB         Max_CA 0 GB 
+[2023-04-17 08:53:03,694] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 22.6 GB, percent = 2.2%
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 0): 235459968
+> learning rate decay style: cosine
+WARNING: could not find the metadata file /data/checkpoints/latest_checkpointed_iteration.txt 
+    will not load any checkpoints and will start from random
+[after model, optimizer, and learning rate scheduler are built] datetime: 2023-04-17 08:53:03 
+> building train, validation, and test datasets ...
+ > datasets target sizes (minimum size):
+    train:      256000000
+    validation: 2565120
+    test:       5120
+> building train, validation, and test datasets for GPT ...
+ > building dataset index ...
+    reading sizes...
+    reading pointers...
+    reading document index...
+    creating numpy buffer of mmap...
+    creating memory view of numpy buffer...
+ > finished creating indexed dataset in 0.001128 seconds
+    number of documents: 6412235
+ > dataset split:
+    train:
+     document indices in [0, 6085211) total of 6085211 documents
+    validation:
+     document indices in [6085211, 6405823) total of 320612 documents
+    test:
+     document indices in [6405823, 6412235) total of 6412 documents
+ > loading doc-idx mapping from /data/gpt_data/my-gpt2_text_document_train_indexmap_256000000ns_1024sl_1234s_doc_idx.npy
+ > loading sample-idx mapping from /data/gpt_data/my-gpt2_text_document_train_indexmap_256000000ns_1024sl_1234s_sample_idx.npy
+ > loading shuffle-idx mapping from /data/gpt_data/my-gpt2_text_document_train_indexmap_256000000ns_1024sl_1234s_shuffle_idx.npy
+    loaded indexed file in 0.001 seconds
+    total number of samples: 258329056
+    total number of epochs: 83
+ > loading doc-idx mapping from /data/gpt_data/my-gpt2_text_document_valid_indexmap_2565120ns_1024sl_1234s_doc_idx.npy
+ > loading sample-idx mapping from /data/gpt_data/my-gpt2_text_document_valid_indexmap_2565120ns_1024sl_1234s_sample_idx.npy
+ > loading shuffle-idx mapping from /data/gpt_data/my-gpt2_text_document_valid_indexmap_2565120ns_1024sl_1234s_shuffle_idx.npy
+    loaded indexed file in 0.001 seconds
+    total number of samples: 2570884
+    total number of epochs: 18
+ > loading doc-idx mapping from /data/gpt_data/my-gpt2_text_document_test_indexmap_5120ns_1024sl_1234s_doc_idx.npy
+ > loading sample-idx mapping from /data/gpt_data/my-gpt2_text_document_test_indexmap_5120ns_1024sl_1234s_sample_idx.npy
+ > loading shuffle-idx mapping from /data/gpt_data/my-gpt2_text_document_test_indexmap_5120ns_1024sl_1234s_shuffle_idx.npy
+    loaded indexed file in 0.001 seconds
+    total number of samples: 6851
+    total number of epochs: 3
+> finished creating GPT datasets ...
+[after dataloaders are built] datetime: 2023-04-17 08:53:06 
+done with setup ...
+training ...
+[before the start of training step] datetime: 2023-04-17 08:53:06 
+
+
+
+
+[2023-04-17 08:53:06,096] [INFO] [utils.py:838:see_memory_usage] CPU Virtual Memory:  used = 21.2 GB, percent = 2.1%
+ > number of parameters on (tensor, pipeline) model parallel rank (7, 1): 232320384 > number of parameters on (tensor, pipeline) model parallel rank (5, 1): 232320384
+
+ > number of parameters on (tensor, pipeline) model parallel rank (6, 1): 232320384
+ > number of parameters on (tensor, pipeline) model parallel rank (4, 1): 232320384
+ > number of parameters on (tensor, pipeline) model parallel rank (3, 1): 232320384
+ > number of parameters on (tensor, pipeline) model parallel rank (1, 1): 232320384
+ > number of parameters on (tensor, pipeline) model parallel rank (0, 1): 232320384
+ > number of parameters on (tensor, pipeline) model parallel rank (2, 1): 232320384
+time (ms) | load-checkpoint: 0.57
+time (ms) | model-and-optimizer-setup: 666.28 | train/valid/test-data-iterators-setup: 2746.40
+
+time (ms) | load-checkpoint: 0.18
+time (ms) | model-and-optimizer-setup: 490.77 | train/valid/test-data-iterators-setup: 2169.23
+ iteration       10/  500000 | consumed samples:         5120 | consumed tokens:      5242880 | elapsed time per iteration (ms): 16571.0 | learning rate: 0.000E+00 | global batch size:   512 | loss scale: 8388608.0 | actual seqlen:  1024 | number of skipped iterations:  10 | number of nan iterations:   0 | samples per second: 30.897 | TFLOPs: 58.60 |
+time (ms) | forward-compute: 5321.12 | forward-recv: 142.17 | backward-compute: 10478.63 | backward-send: 0.69 | backward-send-forward-recv: 303.29 | backward-params-all-reduce: 11.69 | backward-embedding-all-reduce: 106.24 | optimizer-copy-to-main-grad: 2.07 | optimizer-unscale-and-check-inf: 178.57 | optimizer: 180.72 | batch-generator: 165.61
+----------------------------------------------------------------------------------------------
+ validation loss at iteration 10 | lm loss value: 1.138411E+01 | lm loss PPL: 8.791399E+04 | 
+----------------------------------------------------------------------------------------------
+
+time (ms) | save-checkpoint: 1697.90
+  successfully saved checkpoint at iteration      10 to /data/checkpoints
+Checkpoint Save GB: 52.743, GB/Sec: 31.06, Latency(second): 1.698
+
+11G     checkpoints/iter_0000010
+25G     checkpoints/iter_0000030
+25G     checkpoints/iter_0000020
+
+11G     checkpoints/iter_0000010
+25G     checkpoints/iter_0000030
+25G     checkpoints/iter_0000020
+
+3.1G    ./mp_rank_00_000/model_optim_rng.pt
+3.1G    ./mp_rank_06_000
+3.1G    ./mp_rank_04_000
+3.1G    ./mp_rank_01_000
+3.1G    ./mp_rank_07_000
+3.1G    ./mp_rank_02_000
+3.1G    ./mp_rank_05_000
+3.1G    ./mp_rank_03_000
+25G     .

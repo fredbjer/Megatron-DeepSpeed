@@ -1,5 +1,7 @@
 #! /bin/bash
 
+# docker run -itd --network=host --ipc=host --privileged --ulimit memlock=-1 --ulimit stack=67108864 --device=/dev/infiniband \
+# -v /home/lanrui/fred:/data/ --name magatron registry.baidubce.com/bblsp/cuda:117-v4 /bin/bash
 # Runs the "345M" parameter model
 
 GPUS_PER_NODE=8
@@ -16,7 +18,7 @@ CHECKPOINT_PATH=/data/checkpoints
 
 DISTRIBUTED_ARGS="--nproc_per_node $GPUS_PER_NODE --nnodes $NNODES --node_rank $NODE_RANK --master_addr $MASTER_ADDR --master_port $MASTER_PORT"
 
-python3 -m torch.distributed.launch $DISTRIBUTED_ARGS \
+torchrun $DISTRIBUTED_ARGS \
        pretrain_gpt.py \
        --num-layers 24 \
        --hidden-size 1024 \

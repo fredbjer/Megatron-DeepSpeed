@@ -38,6 +38,13 @@ import subprocess
 from torch import nn
 import torch.nn.functional as F
 
+import wandb
+# start a new wandb run to track this script
+wandb.init(
+    # set the wandb project where this run will be logged
+    project="megatron-deepspeed",
+)
+
 def model_provider(pre_process=True, post_process=True):
     """Build the model."""
 
