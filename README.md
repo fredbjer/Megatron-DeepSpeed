@@ -28,28 +28,28 @@ All the cases from 1 billion to 1 trillion parameters achieve more than 43% half
 
 
 # Contents
-   * [Contents](#contents)
-   * [Setup](#setup)
-      * [Downloading Checkpoints](#downloading-checkpoints)
-   * [Usage](#usage)
-   * [Training](#training)
-      * [Data Preprocessing](#data-preprocessing)
-      * [BERT Pretraining](#bert-pretraining)
-      * [GPT Pretraining](#gpt-pretraining)
-      * [T5 Pretraining](#t5-pretraining)
-      * [Distributed Pretraining](#distributed-pretraining)
-      * [GPT-3 Example](#gpt-3-example)
-   * [Evaluation and Tasks](#evaluation-and-tasks)
-      * [GPT Text Generation](#gpt-text-generation)
-      * [GPT Evaluation](#gpt-evaluation)
-         * [WikiText Perplexity Evaluation](#wikitext-perplexity-evaluation)
-         * [LAMBADA Cloze Accuracy](#lambada-cloze-accuracy)
-      * [BERT Task Evaluation](#bert-task-evaluation)
-         * [RACE Evaluation](#race-evaluation)
-         * [MNLI Evaluation](#mnli-evaluation)
-   * [Datasets](#datasets)
-      * [Collecting Wikipedia Training Data](#collecting-wikipedia-training-data)
-      * [Collecting GPT Webtext Data](#collecting-gpt-webtext-data)
+- [Contents](#contents)
+- [Setup](#setup)
+  - [Downloading Checkpoints](#downloading-checkpoints)
+- [Usage](#usage)
+- [Training](#training)
+  - [Data Preprocessing](#data-preprocessing)
+  - [BERT Pretraining](#bert-pretraining)
+  - [GPT Pretraining](#gpt-pretraining)
+  - [T5 Pretraining](#t5-pretraining)
+  - [Distributed Pretraining](#distributed-pretraining)
+  - [GPT-3 Example](#gpt-3-example)
+- [Evaluation and Tasks](#evaluation-and-tasks)
+  - [GPT Text Generation](#gpt-text-generation)
+  - [GPT Evaluation](#gpt-evaluation)
+    - [WikiText Perplexity Evaluation](#wikitext-perplexity-evaluation)
+    - [LAMBADA Cloze Accuracy](#lambada-cloze-accuracy)
+  - [BERT Task Evaluation](#bert-task-evaluation)
+    - [RACE Evaluation](#race-evaluation)
+    - [MNLI Evaluation](#mnli-evaluation)
+- [Datasets](#datasets)
+  - [Collecting Wikipedia Training Data](#collecting-wikipedia-training-data)
+  - [Collecting GPT Webtext Data](#collecting-gpt-webtext-data)
 
 # Setup
 We have tested Megatron with [NGC's PyTorch container](https://ngc.nvidia.com/catalog/containers/nvidia:pytorch) version 20.12, which uses python 3.8, pytorch 1.8, cuda 11.1, and nccl 2.8.3.
@@ -603,3 +603,11 @@ We recommend using the `--json` argument when using WikiExtractor, which will du
 
 ## Collecting GPT Webtext Data
 We utilize the publicly available [OpenWebText](https://github.com/eukaryote31/openwebtext) library from [jcpeterson](https://github.com/jcpeterson/openwebtext) and [eukaryote31's](https://github.com/eukaryote31/openwebtext) work to download urls. We then filtered, cleaned, and deduplicated all downloaded content according to the procedure described in our [openwebtext](./tools/openwebtext) directory. For reddit URLs corresponding to content up to October 2018 we arrived at approximately 37GB of content.
+
+
+- AssertionError: ZeRO-2 and ZeRO-3 are incompatible with pipeline parallelism
+- https://github.com/microsoft/DeepSpeed/issues/1110
+- https://github.com/microsoft/DeepSpeed/pull/3399  & Add ZeRO 1 support to PP for BF16
+- https://github.com/microsoft/DeepSpeed/issues/1835
+- important: bf16 must use z0! it implements its own zero stage 1 equivalent
+- AttributeError: 'DeepSpeedZeroOptimizer' object has no attribute 'clear_lp_grads'
